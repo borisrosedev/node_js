@@ -1,0 +1,26 @@
+@use "../abstracts/mixins";
+
+.custom-form {
+    @include mixins.flex-box(column);
+    width: 100%;
+
+    input::placeholder {
+        color: rgb(179, 176, 176);
+    }
+
+    & > section:first-of-type {
+        @include mixins.flex-box(column); 
+        width: 100%;
+        article {
+            margin-block: 10px;
+            @include mixins.flex-box(column);
+            width: 100%;
+
+        }
+    }
+    & > section:last-of-type {
+        @include mixins.flex-box(row, center, space-between); 
+        width: 100%;
+        
+    }
+}

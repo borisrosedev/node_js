@@ -1,0 +1,5 @@
+@use "../abstracts/mixins";
+
+.home__main {
+    @include mixins.flex-box(column, center, center);
+}

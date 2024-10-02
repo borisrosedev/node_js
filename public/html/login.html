@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diary | Login</title>
+    <meta name="author" content="Boris Rose">
+    <meta name="description" content="A diary to follow my adventures">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="/styles" type="text/css" />
+  </head>
+  <body>
+    <header id="app-header">
+      <a href="/">
+        <figure>
+          <img src="/files/diary-logo.png" alt="login de Diary" />
+        </figure>
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="/register">Sign up</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="app-main login__main">
+      <section class="login__form-section">
+        <h1>Login</h1>
+        <form class="custom-form" method="POST" action="/submit-login-form">
+          <section class="form__fieds">
+            <article>
+              <label for="email"></label>
+              <input
+                class="input"
+                type="email"
+                id="email"
+                name="email"
+                aria-required="true"
+                placeholder="Enter your email"
+                required
+              />
+            </article>
+
+            <article>
+              <label for="password"></label>
+              <input
+                class="input"
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                aria-required="true"
+                required
+              />
+            </article>
+          </section>
+          <section class="form__butons">
+            <button class="button" type="submit">Log in</button>
+            <button class="button" type="reset">Reset</button>
+          </section>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

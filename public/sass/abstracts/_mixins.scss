@@ -1,0 +1,16 @@
+@mixin flex-box($dir: row, $align: flex-start, $justif: flex-start) {
+  display: flex;
+  flex-direction: $dir;
+  align-items: $align;
+  justify-content: $justif;
+}
+
+@mixin geometric-figure($side: 50px, $is-circular: "false") {
+  width: $side;
+  height: $side;
+
+  @if #{$is-circular} == "true" {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}

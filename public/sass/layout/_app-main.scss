@@ -1,0 +1,11 @@
+@use "../abstracts/mixins";
+
+.app-main {
+  @include mixins.flex-box(column);
+  height: 100vh;
+  width: 100%;
+  background-image: url("/files/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

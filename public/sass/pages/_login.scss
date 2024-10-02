@@ -1,0 +1,9 @@
+@use "../abstracts/mixins";
+
+.login__main {
+    @include mixins.flex-box(column, center, center);
+
+    & > section:first-of-type {
+        width: 400px;
+    }
+}
