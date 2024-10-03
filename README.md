@@ -11,5 +11,6 @@
     <li style="padding:10px;background-color:beige; color: #000">Github Actions</li>
     <li style="padding:10px;">Prettier</li>
     <li style="padding:10px;background-color:beige; color: #000">Eslint</li>
+    <li style="padding:10px;">Swagger</li>
 </ul>
 </main>
